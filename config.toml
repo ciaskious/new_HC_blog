@@ -1,0 +1,38 @@
+baseURL = "https://ciatastrophe.netlify.com"
+languageCode = "en-us"
+title = "Ciatastrophe"
+theme = "ghostwriter"
+disqusShortname = "https-ciatastrophe-netlify-com"
+
+
+[Params]
+    intro = true
+    headline = "Anastasia 💻"
+    description = "| My HolidayCheck Apprenticeship Blog - Stay Tuned!"
+    github = "https://github.com/ciaskious"
+    linkedin = "https://linkedin.com/in/anastasia-kaloudi93/"
+    twitter = "https://twitter.com/anaskaloudi"
+
+
+[Permalinks]
+    post = "/:year/:month/:day/:filename/"
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Projects"
+    url = "/project/"
+    weight = 2
+
+[[menu.main]]
+    name = "Contact"
+    url = "/page/contact/"
+    weight = 3
+
+[[menu.main]]
+    name = "About"
+    url = "/page/about/"
+    weight = 4
