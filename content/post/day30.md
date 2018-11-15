@@ -13,21 +13,22 @@ Well, I started my day motivated for week 3 on Coursera! During the lesson on cl
 
 Although I have used class extensions before, sometimes is good to get back to things and pay attention to the detail. Although I didn't get something super new on the topic, somehow I feel like I am finally getting the point of "functional" and "immutability", and really understanding more on data structures; what opened my eyes was ``persistent data structures``, which were referred as the _cornerstone of scaling functional programming_ in the video. And what really made my day, was this [video](https://www.youtube.com/watch?v=Wo0qiGPSV-s) on tries. But first things first...
 
-### What are tries? Why do we care about immutability? How many times a day do pandas poop?
+### Persistent? What are tries? Why do we care about immutability? How many times a day do pandas poop?
 
-I want to avoid the "google-theoritical" stuff:  
+I want to avoid the "googlish-theoritical" stuff, so:  
 
-* A trie ( pronounce like try) is a persistent, concurrent, tree-like data structure. It is used
+* A data structure is **persistent** if, when changed, can still preserve its previous version *brain exploded*
 
-* At a first glance, the trie looks like a hash table  
-*
+* A trie ( pronounced like _try_) is a persistent, concurrent, tree-like data structure.
+
+* They can be used for efficient information re **trie** val and common use case are dictionaries for predictive text (e.g. google search).
+
+* ``Tries vs Hash Tables:`` They need no hash function, so no key collisions. Every key is unique as every path to a value is unique.  
+  But it comes with a price -> sometimes search can get slow.  
 
 And last but not least... Pandas can poop up to 40 times a day **#factOfTheDay**
 
-I tried a lot to verbalize it and here it is:
-`` ``
-
-
+I know that this is not a fascinating post on tries, but I am still trieng...  😅
 
 
 [Song of the day] (https://www.youtube.com/watch?v=yTCDVfMz15M)
