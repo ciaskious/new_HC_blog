@@ -1,4 +1,4 @@
-baseURL = "https://ciatastrophe.netlify.com"
+baseURL = "https://ciatastrophe.netlify.com/"
 languageCode = "en-us"
 title = "Ciatastrophe"
 theme = "ghostwriter"
@@ -12,6 +12,9 @@ disqusShortname = "https-ciatastrophe-netlify-com"
     github = "https://github.com/ciaskious"
     linkedin = "https://linkedin.com/in/anastasia-kaloudi93/"
     twitter = "https://twitter.com/anaskaloudi"
+
+[Author]
+    name = "Anastasia"
 
 
 [Permalinks]
