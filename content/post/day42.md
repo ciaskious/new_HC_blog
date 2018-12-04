@@ -7,7 +7,7 @@ draft: false
 
 It was about time to try out akka http and dockerize a small example app. In this post I will explain step by step how to write a "Hello (wait for it...) World" and put in a Docker container using the [SBT Native Packager](https://sbt-native-packager.readthedocs.io/en/latest/index.html). The main example can be found in the [akka docs](https://doc.akka.io/docs/akka-http/current/routing-dsl/index.html)
 
-First things first, Akka HTTP is not a framework; it is a more general solution for HTTP services, built on _akka stream_ and _akka actor_. In the future, I want to try out web-frameworks based on Akka, like Play or Spray, but for now the point is understand the actor system and routes.  The reason I used it today: I just needed to integrate an HTTP layer in my project. In addition, Akka HTTP offers abstraction by giving you the freedom to use different level APIs for the same task.
+First things first, Akka HTTP is not a framework; it is a more general solution for HTTP services, built on _akka stream_ and _akka actor_. In the future, I want to try out web-frameworks based on Akka, like Play or Spray, but for now the point is to understand the actor system and routes.  The reason I used it today: I just needed to integrate an HTTP layer in my project. In addition, Akka HTTP offers abstraction by giving you the freedom to use different level APIs for the same task.
 
 To get started with his project, we have to add the dependencies to our **build.sbt** file:  
 
@@ -93,7 +93,7 @@ dockerExposedPorts := Seq(8080)
 The **JavaAppPackaging** is an archetype that will use the mainClass setting of sbt (automatically discovers your main class) to generate bat and bin scripts for the project.  
 You can first run _sbt stage_ and have it run locally without being packaged. You will find it at _./target/universal/stage/bin/akka-http-example_.  
 
-  Then, to create the docker image, we first define parameters that we would normally include in our Dockerfile. For this Scala project, we use the _openjdk_ base image and after creating our container, it will be accessed via port 8080. This is the port that the "outside world" needs in order to see our container and not the one we defined in our app. On top of that, now we have to go back to the app and change the interface from "localhost/8080" to "0.0.0.0/8080". As docker is running on a Virtual Machine, we need to bind to this wildcard ip address in order to match any possible ip on the host.  
+  Then, to create the docker image, we first define parameters that we would normally include in our Dockerfile. For this Scala project, we use the _openjdk_ base image and after creating our container, it will be accessed via port 8080. This is the port that the "outside world" needs in order to see our container and not the one we defined in our app. On top of that, now we have to go back to the app and change the interface from "localhost:8080" to "0.0.0.0:8080". As docker is running on a Virtual Machine, we need to bind to this wildcard ip address in order to match any possible ip on the host.  
   ```
   val bindingFuture = Http().bindAndHandle(route, "0.0.0.0", 8080)  
   println(s"Server online at http://0.0.0.0:8080/\nPress RETURN to stop...")
@@ -103,8 +103,9 @@ You can first run _sbt stage_ and have it run locally without being packaged. Yo
  `docker:stage`  
  `docker:publishLocal`  
  You will now be able to see your image if you do `$ docker images`. Then, you can run a container with
- `$ docker run <name of your image>`. Now you will be able to get your response if you `$ curl http://0.0.0.0:8080/hello`.
-
+ `$ docker run <name of your image>`.   
+ Now you can see your response your response if you `$ curl http://0.0.0.0:8080/hello`.  
+  
 
 
 ![winner](https://media.giphy.com/media/l41JTmjI1p0FkSBuU/giphy.gif)  
