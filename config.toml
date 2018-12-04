@@ -2,6 +2,7 @@ baseURL = "https://ciatastrophe.netlify.com/"
 languageCode = "en-us"
 title = "Ciatastrophe"
 theme = "ghostwriter"
+googleAnalytics= "UA-130439472-1"
 disqusShortname = "https-ciatastrophe-netlify-com"
 
 
