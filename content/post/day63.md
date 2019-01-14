@@ -1,7 +1,7 @@
 ---
 title: "Day63: Happy new year"
 date: 2019-01-14T15:04:38+01:00
-draft: true
+draft: false
 tags: ["apprenticeship"]
 ---
 
