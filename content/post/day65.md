@@ -1,5 +1,5 @@
 ---
-title: "Day65: A little bit this and that"
+title: "Day65: A little bit of this and that"
 date: 2019-01-16T10:58:45+01:00
 tags: ["apprenticeship", "nix"]
 draft: false
