@@ -1,7 +1,7 @@
 ---
 title: "Day66&67: From Nix to Docker and thoughts"
 date: 2019-01-18T16:10:36+01:00
-draft: true
+draft: false
 tags: ["nix", "docker"]
 ---
 
@@ -27,6 +27,6 @@ A question came up in my head? And the cool thing is, I am not the only one with
 
 * If you delete or add a package in your Dockerfile you have to rebuild your image. Apart from that, you install your packages from  scratch and not only affects your speed, but also you cannot always be sure for the outcome of the installations because the shell commands depend on outside sources.
 
-Nix and Docker are 2 different tools. Nix is an amazing package manager. Docker is a life-changing containerization tool which helps you ship and scale your app, but mostly used to reproduce builds; something that Nix does extremely well as a functional package manager. 
+Nix and Docker are 2 different tools. Nix is an amazing package manager. Docker is a life-changing containerization tool which helps you ship and scale your app, but mostly used to reproduce builds; something that Nix does extremely well as a functional package manager.
 
 [Song of the day](https://www.youtube.com/watch?v=VJ_dOwxJv-w)
