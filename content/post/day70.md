@@ -21,6 +21,8 @@ Improvements:
 
 * Got some resources from my mentor on SQL. Koans, of which I have never heard before, are a kata-like way to learn new things. These SQL koans [here](https://sqlkoans.com/) made my day. It took me some extra energy to focus on some of them, but in the end I got all the basics I was missing yesterday. Plus points: ran the whole process on tmux - finally felt so much faster.  
 
+* I tried codewars as well for SQL, but they use tons of functions in the katas and that was not what I was looking for today.  
+  
 * Changed my Dockerfile  
 
 ```
