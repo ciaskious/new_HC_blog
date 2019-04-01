@@ -1,7 +1,7 @@
 ---
 title: "Day 1"
 date: 2019-04-01T09:23:49+02:00
-draft: true
+draft: false
 tags: ["apprenticeship"]
 ---
 
@@ -9,7 +9,7 @@ I avoided to write a post for the last day of my apprenticeship, because to be h
 
 Today, it is my first day in my new team and the first day of my very own eternal apprenticeship. I got the chills thinking of our new apprentice starting today in Bottighofen; while we were moving to our new places, he was getting welcomed in the company, and instantly all my memories from my first day here came back minute by minute. Then I realised that what is gonna happen starting today, is even more special than Apprenticeship[Day1].
 
-The program might be over, but now it is my responsibility to collect all learnings from the 3 phases and carry them in the team. I am excited to be here now and I am looking forward to sharing and learning more on the craft from each other.
+The program might be over, but now it is my responsibility to collect all learnings from the 3 phases and carry them in the team. I am excited to be here now and I am looking forward to sharing and learning more on the craft from each other.  
 In all honesty, when I started the program I really believed that I will become the master crafter within 6 months, but being here today I laugh at myself. The master crafter in my eyes, was the developer who writes awesome, bug-free code and knows everything necessary to do with eyes closed; and this is why I started stressed reading books trying to cover every single topic suggested to me and being always willing to switch even daily between them.
 
 ### But...
